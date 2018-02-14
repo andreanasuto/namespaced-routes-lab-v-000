@@ -7,7 +7,8 @@ class ArtistsController < ApplicationController
     @artist = Artist.find(params[:id])
   end
 
-  def new    
+  def new
+    p = Preference.last    
     @artist = Artist.new
   end
 
